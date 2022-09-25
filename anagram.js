@@ -44,6 +44,9 @@ function validAnagram(str1, str2) {
         return false;
     }
 
+    str1 = str1.toLowerCase();
+    str2 = str2.toLowerCase();
+
     let anagramCount = {};
 
     for (let i = 0; i < str1.length; i++) {
@@ -62,4 +65,4 @@ function validAnagram(str1, str2) {
     return true;
 }
 
-console.log(validAnagram('anagram', 'nagaram'));
+console.log(validAnagram('Anagram', 'nagaram'));
